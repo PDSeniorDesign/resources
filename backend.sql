@@ -28,7 +28,7 @@ CREATE TABLE `application_coordinators` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `application_coordinators` (`id`, `email`, `name`, `phone`) VALUES
-(235,	'LACPDFormTester@gmail.com',	'Application Coordinator',	'0123456789');
+(235,	'LACPDFormTester@gmail.com',	'Sample Coordinator',	'0123456789');
 
 DROP TABLE IF EXISTS `department_heads`;
 CREATE TABLE `department_heads` (
@@ -40,7 +40,7 @@ CREATE TABLE `department_heads` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `department_heads` (`id`, `email`, `name`, `phone`) VALUES
-(233,	'LACPDFormTester@gmail.com',	'Department Head',	'0123456789');
+(233,	'LACPDFormTester@gmail.com',	'Sample Department Head',	'0123456789');
 
 DROP TABLE IF EXISTS `dept_info_security_officers`;
 CREATE TABLE `dept_info_security_officers` (
@@ -52,7 +52,7 @@ CREATE TABLE `dept_info_security_officers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `dept_info_security_officers` (`id`, `email`, `name`, `phone`) VALUES
-(237,	'LACPDFormTester@gmail.com',	'Dept Info Security Officer',	'0123456789');
+(237,	'LACPDFormTester@gmail.com',	'Sample Security Officer',	'0123456789');
 
 DROP TABLE IF EXISTS `div_chief_managers`;
 CREATE TABLE `div_chief_managers` (
@@ -64,7 +64,7 @@ CREATE TABLE `div_chief_managers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `div_chief_managers` (`id`, `email`, `name`, `phone`) VALUES
-(234,	'LACPDFormTester@gmail.com',	'Div Chief / Manager',	'0123456789');
+(234,	'LACPDFormTester@gmail.com',	'Sample Div Chief / Manager',	'0123456789');
 
 DROP TABLE IF EXISTS `fields`;
 CREATE TABLE `fields` (
@@ -225,7 +225,7 @@ CREATE TABLE `hibernate_sequence` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `hibernate_sequence` (`next_val`) VALUES
-(238);
+(241);
 
 DROP TABLE IF EXISTS `mappings`;
 CREATE TABLE `mappings` (
@@ -477,7 +477,5 @@ CREATE TABLE `service_requests` (
   PRIMARY KEY (`request_number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-INSERT INTO `service_requests` (`request_number`, `adaptive_authentication_vpn`, `add_logon_id`, `agreement_id`, `application_coordinator_email`, `application_coordinator_name`, `application_coordinator_phone`, `billing_account_number`, `bin_number`, `business_city`, `business_justification`, `business_phone_number`, `business_state`, `business_street_address`, `business_zip`, `change_logon_id`, `cherwell_sms`, `company_city`, `company_email_address`, `company_name`, `company_phone_number`, `company_state`, `company_street_address`, `company_zip`, `contract_expiration_date`, `contract_work_order_number`, `county_email_address`, `county_phone_number`, `create_date`, `default_county_wide_policy`, `delete_logon_id`, `delete_prior_registration`, `department_head_email`, `department_head_name`, `department_head_phone`, `department_name`, `department_number`, `department_policy_rule0`, `department_policy_rule1`, `department_policy_rule2`, `department_policy_rule3`, `department_policy_rule4`, `dept_info_security_officer_email`, `dept_info_security_officer_name`, `dept_info_security_officer_phone`, `div_chief_manager_email`, `div_chief_manager_name`, `div_chief_manager_phone`, `email_encryption`, `employee_email_address`, `employee_number`, `exchange_email`, `first_name`, `gmail_access`, `group_name`, `ibm_log_on_id`, `internet_application`, `is_complete`, `is_employee`, `is_submitted`, `la_county_gov_access`, `lac_mobile_wifi_access`, `last_name`, `lso_group_code`, `major_group_code`, `manager_email`, `manager_name`, `manager_phone`, `manager_title`, `middle_initial`, `new_registration`, `old_group`, `online_access`, `other_email_access`, `other_email_domain`, `replace_lost_token`, `request_status`, `secur_id_vpn`, `security_authorization`, `social_networking_facebook`, `social_networking_linked_in`, `social_networking_twitter`, `sub_group1`, `sub_group2`, `sub_group3`, `submit_date`, `system_application`, `tokenless_authentication`, `tso_access`, `tso_group_code`, `unix_access_group`, `unix_account_number`, `unix_add_logon_id`, `unix_application`, `unix_change_logon_id`, `unix_delete_logon_id`, `unix_log_on_id`, `update_prior_registration`, `windows_rights_mgmt`, `work_mailing_address`, `yahoo_mail_access`, `manager_first_name`, `manager_last_name`) VALUES
-(378804,	CONV('0', 2, 10) + 0,	CONV('1', 2, 10) + 0,	'CBJCHBCAABAALR-GBmE2W2WvnHG15nUEU2_Jibiw1XwI',	'LACPDFormTester@gmail.com',	'Application Coordinator',	'0123456789',	'844362',	'Bin Number',	'Los Angeles',	'Access required to these technologies.',	'555-263-8342',	'CA',	'500 Example Ave.',	'90032',	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'Los Angeles',	'lacpdformtester@gmail.com',	'Jim\'s Burgers',	'232-626-1673',	'CA',	'123 Apple St.',	'90032',	'06/01/2021',	'C2672721',	'lacpdformtester@gmail.com',	'612-626-7832',	'03/07/2021',	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'LACPDFormTester@gmail.com',	'Department Head',	'0123456789',	'Example Department',	'512',	CONV('0', 2, 10) + 0,	CONV('1', 2, 10) + 0,	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'LACPDFormTester@gmail.com',	'Dept Info Security Officer',	'0123456789',	NULL,	'Div Chief',	'0123456789',	CONV('0', 2, 10) + 0,	'lacpdformtester@gmail.com',	'15',	CONV('0', 2, 10) + 0,	'John',	CONV('1', 2, 10) + 0,	'Test Group',	'23626',	CONV('1', 2, 10) + 0,	CONV('1', 2, 10) + 0,	CONV('0', 2, 10) + 0,	CONV('1', 2, 10) + 0,	CONV('1', 2, 10) + 0,	CONV('1', 2, 10) + 0,	'Doe',	'2352762',	'272727',	'lacpdformtester@gmail.com',	'Manager',	'0123456789',	'Title',	'F',	CONV('1', 2, 10) + 0,	'Old Group',	CONV('1', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'',	CONV('0', 2, 10) + 0,	'ACTION_COMPLETED',	CONV('0', 2, 10) + 0,	'Authorization',	CONV('1', 2, 10) + 0,	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'Test Subgroup',	'Test Subgroup',	'Test Subgroup',	'03/31/2021',	'application',	CONV('0', 2, 10) + 0,	CONV('1', 2, 10) + 0,	'Group Code',	'',	'',	CONV('1', 2, 10) + 0,	'',	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'261361',	CONV('0', 2, 10) + 0,	CONV('0', 2, 10) + 0,	'100 3rd St, Los Angeles, CA, 90032',	CONV('0', 2, 10) + 0,	NULL,	NULL);
 
--- 2021-04-03 03:30:24
+-- 2021-04-03 21:29:39
