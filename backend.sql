@@ -40,7 +40,10 @@ CREATE TABLE `department_heads` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `department_heads` (`id`, `email`, `name`, `phone`) VALUES
-(233,	'LACPDFormTester@gmail.com',	'Sample Department Head',	'0123456789');
+(233,	'LACPDFormTester@gmail.com',	'Sample Department Head',	'0123456789'),
+(243,	'a@a',	'sa',	'1234156555'),
+(244,	'a@a',	'New Dept',	'1123412341'),
+(245,	'a@a',	'Ap',	'1234555555');
 
 DROP TABLE IF EXISTS `dept_info_security_officers`;
 CREATE TABLE `dept_info_security_officers` (
@@ -225,7 +228,7 @@ CREATE TABLE `hibernate_sequence` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `hibernate_sequence` (`next_val`) VALUES
-(241);
+(246);
 
 DROP TABLE IF EXISTS `mappings`;
 CREATE TABLE `mappings` (
@@ -422,6 +425,7 @@ CREATE TABLE `service_requests` (
   `email_encryption` bit(1) NOT NULL,
   `employee_email_address` varchar(100) DEFAULT NULL,
   `employee_number` varchar(50) DEFAULT NULL,
+  `event_history` blob,
   `exchange_email` bit(1) NOT NULL,
   `first_name` varchar(50) DEFAULT NULL,
   `gmail_access` bit(1) NOT NULL,
@@ -437,7 +441,8 @@ CREATE TABLE `service_requests` (
   `lso_group_code` varchar(150) DEFAULT NULL,
   `major_group_code` varchar(150) DEFAULT NULL,
   `manager_email` varchar(150) DEFAULT NULL,
-  `manager_name` varchar(150) DEFAULT NULL,
+  `manager_first_name` varchar(150) DEFAULT NULL,
+  `manager_last_name` varchar(150) DEFAULT NULL,
   `manager_phone` varchar(20) DEFAULT NULL,
   `manager_title` varchar(150) DEFAULT NULL,
   `middle_initial` varchar(5) DEFAULT NULL,
@@ -472,10 +477,8 @@ CREATE TABLE `service_requests` (
   `windows_rights_mgmt` bit(1) NOT NULL,
   `work_mailing_address` varchar(150) DEFAULT NULL,
   `yahoo_mail_access` bit(1) NOT NULL,
-  `manager_first_name` varchar(150) DEFAULT NULL,
-  `manager_last_name` varchar(150) DEFAULT NULL,
   PRIMARY KEY (`request_number`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
--- 2021-04-03 21:29:39
+-- 2021-04-05 22:57:12
