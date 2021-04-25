@@ -40,10 +40,7 @@ CREATE TABLE `department_heads` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `department_heads` (`id`, `email`, `name`, `phone`) VALUES
-(233,	'LACPDFormTester@gmail.com',	'Sample Department Head',	'0123456789'),
-(243,	'a@a',	'sa',	'1234156555'),
-(244,	'a@a',	'New Dept',	'1123412341'),
-(245,	'a@a',	'Ap',	'1234555555');
+(233,	'LACPDFormTester@gmail.com',	'Sample Department Head',	'0123456789');
 
 DROP TABLE IF EXISTS `dept_info_security_officers`;
 CREATE TABLE `dept_info_security_officers` (
@@ -481,4 +478,4 @@ CREATE TABLE `service_requests` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 
--- 2021-04-05 22:57:12
+-- 2021-04-25 18:15:22
